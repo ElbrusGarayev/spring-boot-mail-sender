@@ -1,0 +1,17 @@
+POST http://localhost:8080/send
+Content-Type: application/json
+
+{
+  "subject": "Subject",
+  "to": "example@mail.ru",
+  "text": "Finally iiiit work!"
+}
+###
+POST http://localhost:8080/send
+Content-Type: application/json
+
+{
+  "subject": "Subjec",
+  "to": "example@gmail.com",
+  "text": "Push to Github!"
+}
