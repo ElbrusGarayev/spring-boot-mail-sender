@@ -4,14 +4,14 @@ Content-Type: application/json
 {
   "subject": "Subject",
   "to": "example@mail.ru",
-  "text": "Finally iiiit work!"
+  "text": "Finally it work!"
 }
 ###
 POST http://localhost:8080/send
 Content-Type: application/json
 
 {
-  "subject": "Subjec",
+  "subject": "Best Version",
   "to": "example@gmail.com",
-  "text": "Push to Github!"
+  "text": "Finally found it!"
 }

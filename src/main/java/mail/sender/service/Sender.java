@@ -20,9 +20,10 @@ public class Sender {
 
     public EmailStatus sendMail(String to, String subject, String text) {
         try {
-            InternetAddress addressFrom = new InternetAddress("username");
+            InternetAddress addressFrom = new InternetAddress("username", "Elbrus Garayev");
             MimeMessage mail = javaMailSender.createMimeMessage();
 
+            mail.setFrom(addressFrom);
             mail.setSender(addressFrom);
             mail.setSubject(subject);
             mail.setContent(text, "text/plain");
